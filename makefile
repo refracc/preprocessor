@@ -7,5 +7,4 @@ ppc: clean
 preprocess: clean
 		cl preprocess.c
 push:
-		git remote add origin https://github.com/refracc/set07109-c
 		git push -u origin master

@@ -6,32 +6,28 @@
 
 int main(int argc, char **argv)
 {
-	for (int i = 1; i < argc; i++)
-	{
-
-	}
-	FILE * input_file = fopen("Test Files/string_functions.c", "r");
+	FILE * input_file = fopen("math_functions.c", "r");
 	char line [LINE_LENGTH];
 	int nonEmptyLines = 0;
 	int commentedLines = 0;
 
 	while (fgets(line, LINE_LENGTH, input_file) != NULL)
 	{
-		printf("%s\n", line);
+		if(line[0] != ' '
+			|| line[0] != "\t")
+		{
+			nonEmptyLines++;
+		}
 
-		if(!((line[0] == NULL)
-			|| (line[0] == '\t')
-			|| (line[0] == '\n')))
+		for(int i = 0; i < strlen(line); i++)
+		{
+			if(line[i] == '/' && line[i+1] ==  '/')
 			{
-				nonEmptyLines++;
+				line[i] = "\n";
+				line[i+1] = "\0";
+				commentedLines++;
 			}
-
-			for(int i = 0; i < strlen(line); i++){
-				if((line[i] == '/') && (line[i + 1] == '/'))
-				{
-					commentedLines++;
-				}
-			}
+		}
 	}
 
 	fclose(input_file);
