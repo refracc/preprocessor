@@ -2,6 +2,7 @@ clean:
 		del *.asm
 		del *.exe
 		del *.obj
+		del math_functions1.o
 ppc: clean
 		cl preprocess.c
 preprocess: clean
