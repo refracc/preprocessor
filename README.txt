@@ -1,4 +1,4 @@
-﻿██╗███╗   ██╗████████╗██████╗  ██████╗ ██████╗ ██╗   ██╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗
+██╗███╗   ██╗████████╗██████╗  ██████╗ ██████╗ ██╗   ██╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗
 ██║████╗  ██║╚══██╔══╝██╔══██╗██╔═══██╗██╔══██╗██║   ██║██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║
 ██║██╔██╗ ██║   ██║   ██████╔╝██║   ██║██║  ██║██║   ██║██║        ██║   ██║██║   ██║██╔██╗ ██║
 ██║██║╚██╗██║   ██║   ██╔══██╗██║   ██║██║  ██║██║   ██║██║        ██║   ██║██║   ██║██║╚██╗██║
@@ -27,6 +27,18 @@ non-empty lines and however many lines that do contain comments (both in-line an
     ██╗		   To execute this code on Windows, you first need to open your Visual Studio Command Line
     ██║            NB: It will start off somewhere like this: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>"
     ██║		   1. "cd <folder path>" to get to your directory
-    ██║		   2. "nmake [preprocess|ppc]" [x|y] where x and y are optional. You may use either or and get the same result
-    ██║            3. "preprocess <file>"
-    ╚═╝ 
+    ██║            2. "nmake [preprocess|ppc]" [x|y] where x and y are optional. You may use either or and get the same result	
+    ██║		   3. "preprocess -i <file>" will execute the software to run on that particular file.
+    ██║	   	     3.1 "preprocess -i <file> -c" will execute the software to run on that particular file while keeping all comments in the file.            
+    ╚═╝ 	   
+    ██╗                  ███╗   ██╗██╗██╗  ██╗
+    ██║            ▄ ██╗▄████╗  ██║██║╚██╗██╔╝
+    ██║             ████╗██╔██╗ ██║██║ ╚███╔╝
+    ██║            ▀╚██╔▀██║╚██╗██║██║ ██╔██╗
+    ██║███████╗      ╚═╝ ██║ ╚████║██║██╔╝ ██╗
+    ╚═╝╚══════╝          ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
+                           
+
+
+           
+
