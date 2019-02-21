@@ -2,9 +2,10 @@ clean:
 		del *.asm
 		del *.exe
 		del *.obj
-		del math_functions1.o
+		del *.o
 ppc: clean
 		cl preprocess.c
+		notepad H:\Coursework\README.txt
 preprocess: clean
 		cl preprocess.c
 push:
