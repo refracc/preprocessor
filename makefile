@@ -5,7 +5,6 @@ clean:
 		del *.o
 ppc: clean
 		cl preprocess.c
-		notepad H:\Coursework\README.txt
 preprocess: clean
 		cl preprocess.c
 push:
