@@ -40,7 +40,7 @@ non-empty lines and however many lines that do contain comments (both in-line an
     ██╗		   To execute this code on any *nix-based system, you first need to open your Command Line/Terminal/
     ██║            NB: It will start off in your home directory: "~"
     ██║		   1. "cd <folder path>" to get to your directory
-    ██║     2. "gcc -o <file> preprocess" This will compile the program.
+    ██║            2. "gcc -o <file> preprocess" This will compile the program.
     ██║		   3. "./preprocess -i <file>" will execute the software to run on that particular file.
     ██║	   	     3.1 "./preprocess -i <file> -c" will execute the software to run on that particular file while keeping all comments in the file.
     ╚═╝
