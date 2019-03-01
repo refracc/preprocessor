@@ -21,11 +21,11 @@ int my_strlen(char *string)
     }
     return i;
 }
-//Determines whether one string comes before another alphabetically.
-//Parameters: string2, the first string to compare; string2, the second
-//string to compare.
-//Returns: 0 if the two strings are the same, otherwise the difference
-//between them.
+// Determines whether one string comes before another alphabetically.
+// Parameters: string2, the first string to compare; string2, the second
+// string to compare.
+// Returns: 0 if the two strings are the same, otherwise the difference
+// between them.
 int my_strcmp(char *string1, char *string2)
 {
     int i = 0;
