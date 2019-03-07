@@ -29,13 +29,13 @@ int main(int argc, char *argv[])
 			int commentedLines = 0;
 
 			int i = 0;
-			while (input_file[i] != '\0')
+			while (input_file[i] != '\0') // Loops over the string until the end of the string is reached. Cited from: https://cboard.cprogramming.com/c-programming/146390-trim-last-character-string.html#post1091577
 			{
 				i++;
 			}
-			input_file[i - 2] = '\0';
+			input_file[i - 2] = '\0'; // Awaiting the .o file extension -- See below.
 
-			FILE* output = fopen(strcat(input_file, ".o"), "w"); // Output file for write access // generates if it doesn't exist.
+			FILE* output = fopen(strcat(input_file, ".o"), "w"); // Adds a .o file extension to the file // Output file for write access // generates if it doesn't exist.
 			while (fgets(line, LINE_LENGTH, input) != NULL) // To iterate over the whole file
 			{
 				if (!((line[0] == '\t')
@@ -53,11 +53,13 @@ int main(int argc, char *argv[])
 						char buffer[LINE_LENGTH];
 
 						int counter = 0;
-						for (int j = 10; j < strlen(line)-1; j++) // Start at where we think the first quote is
+						for (int j = 10; j < strlen(line) - 1; j++) // Start at where we think the first quote is
 						{
 							buffer[counter] = line[j];
 							counter++;
 						}
+
+						printf("%s\n", buffer);
 
 						int k = 0;
 						while (buffer[k] != '\0') // Takes the line until there is a null terminator
@@ -65,6 +67,8 @@ int main(int argc, char *argv[])
 							k++;
 						}
 						buffer[k - 1] = '\0'; // Removes the last quote from the string -- Waiting to open .h
+
+						printf("%s\n", buffer);
 
 						line[i] = '\n';
 						line[i + 1] = '\0'; // Removes the #include from the document.
@@ -100,7 +104,7 @@ int main(int argc, char *argv[])
 	}
 	else if (argc == 4)
 	{
-		if (strcmp(argv[2], "-c"))
+		if (strcmp(argv[0], "-i") && strcmp(argv[2], "-c"))
 		{
 			input_file = argv[2];
 			FILE* input = fopen(input_file, "r"); // Input file for read access only.
@@ -139,12 +143,16 @@ int main(int argc, char *argv[])
 							counter++;
 						}
 
+						printf("%s\n", buffer);
+
 						int k = 0;
 						while (buffer[k] != '\0') // Takes the line until there is a null terminator
 						{
 							k++;
 						}
 						buffer[k - 1] = '\0'; // Removes the last quote from the string -- Waiting to open .h
+
+						printf("%s\n", buffer);
 
 						line[i] = '\n';
 						line[i + 1] = '\0'; // Removes the #include from the document.

@@ -44,15 +44,3 @@ non-empty lines and however many lines that do contain comments (both in-line an
     ██║		   3. "./preprocess -i <file>" will execute the software to run on that particular file.
     ██║	           3.1 "./preprocess -i <file> -c" will execute the software to run on that particular file while keeping all comments in the file.
     ╚═╝
-
-
-
- ██████╗██╗████████╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗ ██╗███████╗██╗
-██╔════╝██║╚══██╔══╝██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║██╔╝██╔════╝╚██╗
-██║     ██║   ██║   ███████║   ██║   ██║██║   ██║██╔██╗ ██║██║ ███████╗ ██║
-██║     ██║   ██║   ██╔══██║   ██║   ██║██║   ██║██║╚██╗██║██║ ╚════██║ ██║
-╚██████╗██║   ██║   ██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║╚██╗███████║██╔╝
- ╚═════╝╚═╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═╝╚══════╝╚═╝
-
-https://cboard.cprogramming.com/c-programming/146390-trim-last-character-string.html#post1091577
-https://www.tutorialspoint.com/c_standard_library/c_function_strtok.htm
