@@ -1,4 +1,4 @@
-// Author: Stewart Anderson
+// Author: Stewart A.
 // Matric: 40345422
 // Last Edit: 01.03.2019
 
